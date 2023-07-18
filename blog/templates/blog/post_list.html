@@ -20,16 +20,13 @@
   </header>
 
   <main>
+{% for post in posts %}
     <article>
-      <h2>記事のタイトル</h2>
-      <p>記事の内容がここに入ります。</p>
-      <p>別の段落も追加できます。</p>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>     
     </article>
-
-    <article>
-      <h2>別の記事のタイトル</h2>
-      <p>別の記事の内容がここに入ります。</p>
-    </article>
+{% endfor %}
   </main>
 
   <footer>
