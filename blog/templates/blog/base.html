@@ -1,0 +1,34 @@
+{% load static %}
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>はじめてのブログ</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Simple blog</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#">ホーム</a></li>
+          <li><a href="#">カテゴリー</a></li>
+          <li><a href="#">アーカイブ</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div>
+      {% block content %}
+      {% endblock %}
+    </div>
+
+    <footer>
+      <p>&copy; 2023 おしゃれなブログ. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
