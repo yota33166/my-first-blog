@@ -17,12 +17,12 @@
           <li><a href="#">ホーム</a></li>
           <li><a href="#">カテゴリー</a></li>
           <li><a href="#">アーカイブ</a></li>
-          <li><a href="#">お問い合わせ</a></li>
+          <li><a href="{% url 'post_new' %}" class="top-menu">投稿<span class="glyphicon glyphicon-plus"></span></a></li>
         </ul>
       </nav>
     </header>
 
-    <div>
+    <div class="instagram-style">
       {% block content %}
       {% endblock %}
     </div>

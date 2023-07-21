@@ -29,14 +29,21 @@ nav ul {
 }
 
 nav ul li a {
-  color: #1da1f2;
+  color: #ffffff;
   text-decoration: none;
 }
 
 nav ul li a:hover {
-  color: #0f81c7;
+  color: #dff3ff;
 }
 
+.instagram-style {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 20px auto;
+}
 
 .post {
   background-color: #fff;
@@ -50,16 +57,11 @@ nav ul li a:hover {
 .post h2 {
   font-size: 20px;
   margin-top: 0;
-  margin-bottom: 10px;
 }
 
 .post .date {
   color: #aaa;
   margin-bottom: 10px;
-}
-
-.post .post-text {
-  margin-top: 0;
 }
 
 footer {
@@ -103,6 +105,11 @@ footer p {
 
 /* レスポンシブデザイン */
 @media screen and (max-width: 768px) {
+  .instagram-style {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .post {
     width: 90%;
   }
